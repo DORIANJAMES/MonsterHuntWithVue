@@ -16,7 +16,7 @@
         <div class="small-6 columns">
             <h1 class="text-center">SEN</h1>
             <div class="healthbar">
-                <div :style="{width: player_health+'%'}" class="healthbar text-center"
+                <div :style="playerProgress" class="healthbar text-center"
                      style="background-color: green; margin: 0; color: white; font-weight:bolder">
                     {{player_health}}%
                 </div>
@@ -25,7 +25,7 @@
         <div class="small-6 columns">
             <h1 class="text-center">CANAVAR</h1>
             <div class="healthbar">
-                <div :style="{width: monster_health+'%'}" class="healthbar text-center"
+                <div :style="monsterProgress" class="healthbar text-center"
                      style="background-color: green; margin: 0; color: white; font-weight: bolder">
                     {{monster_health}}%
                 </div>

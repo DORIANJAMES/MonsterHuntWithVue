@@ -98,5 +98,22 @@ new Vue({
                 this.healUpCount = 0
             }
         },
+    },
+    computed : {
+        playerProgress: function () {
+            return {
+                width: this.player_health + "%"
+            }
+        },
+        monsterProgress: function () {
+            return {
+                width: this.monster_health + "%"
+            }
+        },
+        healUpCountProgress: function () {
+            return {
+                width: this.healUpCount * 25 + "%"
+            }
+        }
     }
 })
